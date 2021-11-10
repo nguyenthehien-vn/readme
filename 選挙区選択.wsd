@@ -1,0 +1,25 @@
+@startuml
+
+actor       ユーザー      as a1
+boundary    ヘッダーの地域    as b1
+boundary    候補者一覧が更新されたホーム画面    as b2
+control     都道府県名     as c1
+control     選挙区    as c2
+control     表示する     as c3
+entity      データ      as e1
+
+
+
+a1 -> b1: 
+b1 -> c1 :都道府県名のボタンを押す
+c1-->b1:
+
+c1-> c2 :
+c2->c3:
+e1-> c2 : 
+c3 --> b2 : 
+
+
+
+
+@enduml

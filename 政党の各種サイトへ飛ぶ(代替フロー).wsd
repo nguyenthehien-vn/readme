@@ -1,0 +1,26 @@
+@startuml
+
+actor       ユーザー      as a1
+boundary    ホーム画面    as b1
+boundary    政党の紹介ページ    as b2
+control     政党一覧表示    as c1
+control     URL検索   as c2
+control     表示する    as c3
+
+
+
+
+
+a1 -> b1 :
+b1 -> c1 :政党一覧を選択する
+
+
+c1->c2:閲覧したい政党を選択する
+c2->c3:
+
+c3-->b2:
+ 
+
+
+
+@enduml

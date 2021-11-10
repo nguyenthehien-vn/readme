@@ -1,0 +1,22 @@
+@startuml
+
+actor       ユーザー      as a1
+boundary    ホーム画面    as b1
+boundary    政党の紹介ベージ as b2
+control     URL検索   as c1
+control     表示する    as c2
+
+
+
+
+
+a1 -> b1 : 
+b1 -> c1 : 
+c1-->b1:
+c1 -> c2 : 
+
+
+ 
+c2--> b2 :
+
+@enduml
